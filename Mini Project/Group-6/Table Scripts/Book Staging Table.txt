@@ -1,0 +1,16 @@
+-- Staging Table for Books Master Table --
+CREATE TABLE cus.xxpatni_books_stage_srp 
+(book_id 	 NUMBER(15),
+ author_id 	 NUMBER(15),
+ book_name  	 VARCHAR2(150),
+ isbn_number  	 NUMBER(13),
+ pages		 NUMBER,
+ cost 		 NUMBER,
+ publishing_date DATE,
+ book_type       VARCHAR2(25),
+ status          VARCHAR2(50))
+/
+
+-- Synonym for Staging Table Author Master Table --
+CREATE SYNONYM xxpatni_books_stage_srp FOR cus.xxpatni_books_stage_srp
+/

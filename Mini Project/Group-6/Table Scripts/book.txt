@@ -1,0 +1,21 @@
+101	103301	Cloud Computing Using Oracle Application Express	0655472337797	256	450	2017	IT
+102	103302	Deploying Railswith Docker Kubernetes and ECS      	1484224140	127	500	2016	IT
+103 	103303	Big Data Analyticswith Rand Hadoop                	178216328X	238	300	2013	IT
+104	103304	RedHat Enterprise Linux 6 Administrator             	1118301293	674	500	2013	IT
+105	103305	Microsoft Office 365 Administration Inside Out     	0735678235	870	560	2013	IT
+106	103306	N T P Security                                      	1484224116	90	450	2016	IT
+107	103307	Mastering Free SWITCH                             	1784398888	300	390	2016	IT
+108	103308	Cloud Native                                         	1484225015	403	200	2016	IT
+109	103309	Implementing Microsoift Dynamics N A V                	1784397555	492	260	2016	IT
+110	103310	Open Stack Trove Essentials                       	1785285610	170	300	2016	IT
+457	103331	Political Economy Of Human Rights                  	9780375414862	480	450	2006	Non-Fiction   
+434	103332	The Mismeasure of Man                                	0393014894	352	260	1996	Non-fiction 
+450	103333	The City in History                                	0156180359	657	410	1961	Non-Fiction
+354	103334	Battle Cry of Freedom                              	9780195038637	904	320	1988	Non-Fiction
+254	103335	1776                                                	9780743226714	386	190	2005	Non-Fiction
+211	103391	Sri Krishna Bhagavadvijayam                        	5448613138	230	300	1999	Novel
+621	103392	Priyadarsi Ashoka                                    	1348413411	200	420	2000	Novel
+562	103393	Sri Lekha                                           	25643345  	321	200	2001	Novel
+231	103394	Sri Rasthu Subamastu                                	235544616	159	360	1998	Novel
+124	103395	Samrat Ashoka                                      	1257551331	210	230	1999	Novel
+

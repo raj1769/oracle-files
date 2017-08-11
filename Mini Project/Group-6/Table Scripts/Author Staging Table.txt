@@ -1,0 +1,13 @@
+-- Staging Table for Author Master Table --
+CREATE TABLE cus.xxpatni_authors_stage_srp 
+(author_id    NUMBER(15),
+ author_name  VARCHAR2(30),
+ gender CHAR(1),
+ birth_date DATE,
+ mother_tongue VARCHAR2(20),
+ status VARCHAR2(50))
+/
+
+-- Synonym for Staging Table Author Master Table --
+CREATE SYNONYM xxpatni_authors_stage_srp FOR cus.xxpatni_authors_stage_srp
+/

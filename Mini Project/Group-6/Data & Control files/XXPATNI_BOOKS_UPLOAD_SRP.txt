@@ -1,0 +1,58 @@
+AUTHOR_ID  BOOK_NAME 				ISBN_NO 	PAGES COST PUBLISHING_DATE BOOK_TYPE
+01	Harry Potter and the Philosopher's Stone	0747532699 	223	172	26/06/1997	Non-Fiction
+01	Harry Potter and the Chamber of Secrets 	0747538492 	251	205	02/07/1998	Fiction
+01	Harry Potter and the Prisoner of Azkaban 	0747542155 	317	250	08/07/1999	Fiction
+01	Harry Potter and the Goblet of Fire	074754624X 	636	250	08/07/2000	Fiction
+01	Harry Potter and the Order of the Phoenix	0747551006 	766	300	21/06/2003	Fiction
+01	Harry Potter and the HalfBlood Prince 	0747581088 	607	245	16/07/2005	Fiction
+01	Harry Potter and the Deathly Hallows 	0545010225 	607	225	21/07/2007	Fiction
+02	Gone Girl                          	9780307588364	432	219	22/08/2012	Fiction
+04	The Alchemist                       	0062502174 	208	150	25/09/1988	Fiction
+04	Brida                               	9780007278596	266	226	19/12/1990	Fiction
+04	The Pilgrimage                      	0062502275 	250	250	02/05/1987	Fiction
+04	The Valkyries                      	978007279596 	267	500	04/02/1992	Fiction
+04	By the River Piedra I Sat Down and Wept	0060977264 	192	239	12/04/1994	Fiction
+03	Ender's Game                          	0312932081 	324	270	15/01/1985	Fiction
+03	Speaker for the Dead                  	0312937385 	415	229	04/03/1986	Fiction
+03	Xenocide                              	0312850565 	592	300	21/04/1991	Fiction
+03	Children of the Mind                 	0312853955 	349	160	12/08/1996	Fiction
+03	Shadow of the Hegemon                  	0312876513 	440	130	10/12/2000	Fiction
+03	Shadow Puppets                        	0765300176  	384	320	09/08/2002	Fiction
+03	First Meetings                        	1931081697  	149	289	04/02/2002	Fiction
+03	Shadow of the Giant                   	0312857586 	268	199	01/03/2005	Fiction
+03	A War of Gifts: An Ender Story         	0765312824 	128	217	03/11/2007	Fiction
+03	Ender in Exile                       	0765304961 	455	239	11/11/2008	Fiction
+03	Shadows in Flight                     	0765332000 	365	221	17/01/2012	Fiction
+03	Earth Unaware                      	0765329042 	352	279	17/07/2012	Fiction
+03	The Swarm                             	9780765375629	462	199	28/02/2016	Fiction
+05	The Maze Runner                     	9780385737944	375	239	07/10/2009	Fiction
+05	The Scorch Trials                   	9780385738750	361	279	18/09/2010	Fiction
+05	The Death Cure                      	9780385738774	325	268	23/08/2011	Fiction
+05	The Kill Order                      	9780385742887	327	240	14/08/2012	Fiction
+05	The Fever Code                      	9780553513097	347	356	27/09/2016	Fiction
+06	Twilight                            	0316160172 	498	300	05/10/2005	Fiction
+06	New Moon                            	0316160199 	666	369	06/09/2006	Fiction
+06	Eclipse                            	9780316160209	629	299	07/08/2007	Fiction
+06	Breaking Dawn                        	031606792X 	756	350	02/08/2008	Fiction
+06	The Short Second Life of Bree Tanne 	1907410368 	178	225	05/06/2010	Fiction
+06	The Host                           	0316068047 	809	320	06/05/2008	Fiction
+07	Eragon                             	0375826688 	509	290	26/08/2002	Fiction
+07	Eldest                              	037582670X  	694	345	23/08/2005	Fiction
+04	Big Data Analyticswith Rand Hadoop                	178216328X	238	300	03/11/2007	IT
+03	RedHat Enterprise Linux 6 Administrator             	1118301293	674	500	28/02/2016	IT
+02	Microsoft Office 365 Administration Inside Out     	0735678235	870	560	03/11/2007	IT
+01	N T P Security                                      	1484224116	90	450	02/08/2008	IT
+03	Mastering Free SWITCH                             	1784398888	300	390	18/09/2010	IT
+03	Cloud Native                                         	1484225015	403	200	18/09/2010	IT
+103309	Implementing Microsoift Dynamics N A V                	1784397555	492	260	18/09/2010	IT
+103310	Open Stack Trove Essentials                       	1785285610	170	300	26/08/2002	IT
+103331	Political Economy Of Human Rights                  	978037541482	480	450	26/08/2002	Non-Fiction   
+103332	The Mismeasure of Man                                	0393014894	352	260	26/08/2002	Non-fiction 
+103333	The City in History                                	0156180359	657	410	01/03/2005	Non-Fiction
+103334	Battle Cry of Freedom                              	9780195038637	904	320	01/03/2005	Non-Fiction
+103335	1776                                                	9780743226714	386	190	01/03/2005	Non-Fiction
+103331	Sri Krishna Bhagavadvijayam                        	5448613138	230	300	01/03/2005	Audio
+103332	Priyadarsi Ashoka                                    	1348413411	200	420	18/09/2010	Audio
+103333	Sri Lekha                                           	25643345  	321	200	18/09/2010	Audio
+103334	Sri Rasthu Subamastu                                	235544616	159	360	18/09/2010	Audio
+103335	Samrat Ashoka                                      	1257551331	210	230	18/09/2010	Audio

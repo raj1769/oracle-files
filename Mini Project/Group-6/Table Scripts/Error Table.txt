@@ -1,0 +1,10 @@
+-- Error Table --
+CREATE TABLE cus.xxpatni_error_srp
+(row_id NUMBER,
+table_name VARCHAR2(25),
+error_description VARCHAR2(500))
+/
+
+-- Synonym for Error Table --
+CREATE SYNONYM xxpatni_error_srp FOR cus.xxpatni_error_srp
+/

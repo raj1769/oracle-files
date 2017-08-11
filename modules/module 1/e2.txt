@@ -1,0 +1,62 @@
+(1.1) vi merge.sh&
+
+(1.2)  cat>sample.txt
+                MADA^M
+                RAJA
+                HII^M
+                HELLO^M
+        grep "\^M$" sample.txt
+
+
+(1.3)        sort -t "|" -k3 emp1
+
+
+(1.4)
+ echo "Enter the file name"
+  2 read filename
+  3 if test -r $filename -a -s $filename
+  4 then
+  5         echo " File created by "; ls -l $filename |cut -d " " -f3
+  6         echo " File date and time of creation"; ls -l $filename |cut -    d
+" " -f6-9
+  7         echo " size of the file is"; ls -l $filename |cut -d " " -f5
+  8 fi
+
+1.1)    SELECT last_name,ROUND((sysdate-hire_date)/365,0) as Year,
+         ROUND((sysdate-hire_date)/365*12,0) as Months from employees;
+1.2)
+ SELECT e.first_name as employee_name, e1.first_name as manager_name,e1.salary a
+s salary from employees e,employees e1
+ WHERE e1.employee_id=e.manager_id  AND  e1.salary>15000;
+1.3)   SELECT first_name,last_name,hire_date,
+TO_CHAR(hire_date, 'YYYY')  as Joining_Year from employees;
+1.5)
+          SELECT * from employees
+          WHERE job_id LIKE 'SA%';
+ CREATE OR REPLACE PROCEDURE proc_sal
+ AS
+   CURSOR c1 IS SELECT salary,employee_id from employees
+    WHERE department_id=30;    -- Declaring Cursor
+   v_c1 c1%rowtype;
+   inc_sal employees.salary%type;
+ BEGIN
+    OPEN c1;                -- Opening Cursor
+    LOOP
+    FETCH c1 into v_c1;     -- Fetching the values from cursor
+    EXIT WHEN c1%NOTFOUND;
+    IF(v_c1.salary>3000) THEN
+            inc_sal:=v_c1.salary+(v_c1.salary*0.10);
+    ELSE
+            inc_sal:=v_c1.salary+(v_c1.salary*0.20);
+    END IF;
+    UPDATE employees
+    SET salary=inc_sal
+    WHERE employee_id=v_c1.employee_id;   -- Updating the Salary
+    END LOOP;
+ EXCEPTION                                  -- Exception Block
+    WHEN NO_DATA_FOUND THEN
+    DBMS_OUTPUT.PUT_LINE ('NO rows are present in department-30');
+ END;
+
+
+

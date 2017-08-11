@@ -1,0 +1,87 @@
+/***********************************************************************************
+ * File                 : 1
+ * Author Name          : Rajasekhar reddy
+ * Description          : Program to perform Withdraw functionality for ATM System
+ * Version              : 1.0
+ * Date                 : 13-06-2017
+************************************************************************************/
+
+BEGIN
+       
+		// Declaring variables
+	
+	DECLARE acc_num   INTEGER
+        DECLARE cust_name STRING
+        DECLARE curr_amt  INTEGER
+        DECLARE wd_amt    INTEGER
+
+       		 // Accepting inputs from User
+
+        PROMT " Enter the Account Number "
+        ACCEPT acc_num
+        PROMT " Enter the Customer Name "
+        ACCEPT cust_name
+        PROMT " Enter the Current Balance "        
+	ACCEPT curr_amt 
+	PROMT " Enter the Withdraw Amount "
+        ACCEPT wd_amt
+
+       		 // Performing Withdraw Logic
+
+        IF(isvalid(acc_num)) THEN                              	    		// Validating account number
+               
+	      CALCULATE curr_amt=withdraw(curr_amt,wd_amt)  	   		 // Calculating Balance
+                
+	      PRINT "Withdrawn successfully completed"	            // Giving message for Succesful Transaction
+              PRINT "The Remaining Balance is "+curr_amt
+        ELSE
+               
+	      PRINT " Account number should be Number only"
+        
+	END IF
+
+        	// Exceptions Block
+
+EXCEPTION
+        WHEN No_Bal THEN
+                PRINT errormessage                  		    //Errormessage returned from exception
+
+
+END
+
+/*********************************************************************
+* Module Name         : isValid()
+* Input Parameters    : data
+* Return Type         : BOOLEAN
+* Author              : Rajasekhar reddy
+* Creation Date       : 13-06-2017
+* Description         : To validate data for accepting only digits
+*********************************************************************/
+
+SUB isValid(data)
+        IF(isDigits(data)) THEN
+                RETURN true
+        ELSE
+                RETURN false
+        END IF
+END SUB
+
+/*********************************************************************
+* Module Name         : withdraw()
+* Input Parameters    : curr_amt,wd_amt
+* Return Type         : INTEGER
+* Author              : Rajasekhar reddy
+* Creation Date       : 13-06-2017
+* Description         : To withdraw the amount
+ *********************************************************************/
+
+SUB withdraw(curr_amt,wd_amt)
+
+        IF(curr_amt > wd_amt) THEN                                     // Checking for Balance in the Account
+                curr_amt=(curr_amt - wd_amt)
+        ELSE
+                RAISE No_Bal(" Insufficient Amount in your account")  // Raising Exception
+        END IF
+END SUB
+
+

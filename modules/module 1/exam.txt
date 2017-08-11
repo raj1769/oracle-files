@@ -1,0 +1,9 @@
+ echo "Enter the file name"
+   read filename
+   if test -r $filename -a -s $filename
+   then
+           echo " File created by "; ls -l $filename |cut -d " " -f3
+           echo " File date and time of creation"; ls -l $filename |cut -    d " " -f6-9
+           echo " size of the file is"; ls -l $filename |cut -d " " -f5
+   fi
+

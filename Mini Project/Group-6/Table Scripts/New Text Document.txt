@@ -1,0 +1,19 @@
+CREATE TABLE ORACLE_ELITE_AUTHOR
+	(author_id     NUMBER(15) CONSTRAINT AUTHOR_ID_PK PRIMARY KEY,
+ 	author_name    VARCHAR2(30),
+ 	gender         CHAR(1),
+ 	birth_date     DATE,
+ 	mother_tongue  VARCHAR2(20));
+
+
+
+
+CREATE TABLE ORACLE_ELITE_BOOK
+	(book_id 	 NUMBER(15) CONSTRAINT AUTHOR_ID_PK PRIMARY KEY,
+ 	author_id 	 NUMBER(15) REFERENCES ORACLE_ELITE_AUTHOR(author_id),
+	 book_name  	 VARCHAR2(150),
+ 	isbn_number  	 NUMBER(13),
+	 pages		 NUMBER,
+	 cost 		 NUMBER,
+ 	publishing_date  DATE,
+ 	book_type        VARCHAR2(25));

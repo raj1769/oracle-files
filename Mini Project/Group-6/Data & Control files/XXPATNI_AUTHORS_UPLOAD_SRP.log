@@ -1,0 +1,54 @@
+
+SQL*Loader: Release 10.1.0.5.0 - Production on Wed Mar 22 03:36:48 2017
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Control File:   /dbfiles/applcsf/cust/bin/XXPATNI_AUTHORS_UPLOAD_CTL_SRP.ctl
+Data File:      /dbfiles/applcsf/cust/bin/XXPATNI_AUTHORS_DATA_SRP.txt
+  Bad File:     /dbfiles/applcsf/cust/bin/XXPATNI_AUTHORS_DATA_SRP.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table "CUS"."XXPATNI_AUTHORS_STAGE_SRP", loaded from every logical record.
+Insert option in effect for this table: REPLACE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+AUTHOR_ID                           FIRST     *   |       CHARACTER            
+AUTHOR_NAME                          NEXT     *   |       CHARACTER            
+GENDER                               NEXT     *   |       CHARACTER            
+BIRTH_DATE                           NEXT     *   |       CHARACTER            
+    SQL string for column : "TO_DATE(:birth_date,'DD/MM/YYYY')"
+MOTHER_TONGUE                        NEXT     *   |       CHARACTER            
+
+Record 23: Discarded - all columns null.
+
+Table "CUS"."XXPATNI_AUTHORS_STAGE_SRP":
+  22 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  1 Row not loaded because all fields were null.
+
+
+Space allocated for bind array:                  82560 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:            23
+Total logical records rejected:         0
+Total logical records discarded:        1
+
+Run began on Wed Mar 22 03:36:48 2017
+Run ended on Wed Mar 22 03:36:49 2017
+
+Elapsed time was:     00:00:00.24
+CPU time was:         00:00:00.00

@@ -1,0 +1,40 @@
+BOOK_ID AUTHOR_ID BOOK_NAME 					ISBN_NO 	      PAGES COST PUBLISHING_DATE BOOK_TYPE
+231	01 	Harry Potter and the Philosopher's Stone 	0-7475-3269-9 		223 172 26/06/1997 FICTION
+232 	01 	Harry Potter and the Chamber of Secrets 	0-7475-3849-2 		251 205 02/07/1998 Fiction
+233 	01	Harry Potter and the Prisoner of Azkaban 	0-7475-4215-5 		317 250 08/07/1999 Fiction
+234 	01 	Harry Potter and the Goblet of Fire 		0-7475-4624-X 		636 250 08/07/2000 Fiction
+235 	01 	Harry Potter and the Order of the Phoenix 	0-7475-5100-6 		766 300 21/06/2003 Fiction
+236 	01 	Harry Potter and the Half-Blood Prince 		0-7475-8108-8 		607 245 16/07/2005 Fiction
+237 	01 	Harry Potter and the Deathly Hallows 		0-545-01022-5 		607 225 21/07/2007 Fiction
+238 	02 	Gone Girl 					978-0307588364 		432 219 22/08/2012 FICTION
+239 	04 	The Alchemist		 			0-06-250217-4 		208 150 25/09/1988 Fiction
+240 	04 	Brida 						978-0-00-727859-6 	266 226 19/12/1990 Fiction
+241 	04 	The Pilgrimage 					0-06-250227-5 		250 250 02/05/1987 Fiction
+242 	04 	The Valkyries 					978-00-727959-6 	267 500	04/02/1992 Fiction
+243 	04 	By the River Piedra I Sat Down and Wept 	0-06-097726-4 		192 239 12/04/1994 Fiction
+244 	03 	Ender's Game 					0-312-93208-1 		324 270 15/01/1985 Fiction
+245 	03 	Speaker for the Dead 				0-312-93738-5 		415 229 04/03/1986 Fiction
+246 	03 	Xenocide 					0-312-85056-5 		592 300 21/04/1991 Fiction
+247 	03 	Children of the Mind 				0-312-85395-5 		349 160 12/08/1996 Fiction
+248 	03 	Shadow of the Hegemon 				0-312-87651-3 		440 130 10/12/2000 Fiction
+249 	03 	Shadow Puppets 					0-7653-0017-6  		384 320 09/08/2002 Fiction
+250 	03 	First Meetings 					1-931081-69-7  		149 289 04/02/2002 Fiction
+251 	03 	Shadow of the Giant 				0-312-85758-6 		268 199 01/03/2005 Fiction
+252 	03 	A War of Gifts: An Ender Story 			0-7653-1282-4 		128 217 03/11/2007 Fiction
+253 	03 	Ender in Exile 					0-7653-0496-1 		455 239 11/11/2008 Fiction
+254 	03 	Shadows in Flight 				0-7653-3200-0 		365 221 17/01/2012 Fiction
+255 	03 	Earth Unaware 					0-7653-2904-2 		352 279 17/07/2012 Fiction
+256 	03 	The Swarm 					978-0-7653-7562-9 	462 199 28/02/2016 Fiction
+247 	05 	The Maze Runner 				978-0-385-73794-4 	375 239 07/10/2009 Fiction
+258 	05 	The Scorch Trials 				978-0-385-73875-0 	361 279 18/09/2010 Fiction
+259 	05 	The Death Cure 					978-0-385-73877-4 	325 268 23/08/2011 Fiction
+260 	05 	The Kill Order 					978-0-385-74288-7 	327 240 14/08/2012 Fiction
+261 	05	The Fever Code 					978-0-553-51309-7 	347 356 27/09/2016 Fiction
+263 	06 	Twilight 					0-316-16017-2 		498 300 05/10/2005 Fiction
+264 	06 	New Moon 					0-316-16019-9 		666 369 06/09/2006 Fiction
+265 	06 	Eclipse 					978-0-316-16020-9 	629 299 07/08/2007 Fiction
+266 	06 	Breaking Dawn 					0-316-06792-X 		756 350 02/08/2008 Fiction
+267 	06 	The Short Second Life of Bree Tanne 		1-907410-36-8 		178 225 05/06/2010 Fiction
+268 	06 	The Host 					0-316-06804-7 		809 320 06/05/2008 Fiction
+269 	07 	Eragon 						0-375-82668-8 		509 290 26/08/2002 Fiction
+270 	07 	Eldest 						0-375-82670-X 		694 345 23/08/2005 Fiction

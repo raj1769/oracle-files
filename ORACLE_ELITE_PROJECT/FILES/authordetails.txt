@@ -1,0 +1,23 @@
+01|J.K. Rowling|F|31/07/1965|English
+02|Gillian Flynn|F|24/02/1971|English
+03|Orson Scott Card|M|24/08/1951|English
+04|Paulo Coelho|M|24/08/1947|Portugese
+05|James Smith Dashner|M|26/11/1972|English
+06|Stephenie Meyer|F|24/12/1973|English
+07|Christopher James Paolini|M|17/11/1983|English
+103301|Anthony Minessale II|M|24/08/1976|English
+103302|Pablo Acunia|M|21/07/1976|English
+103303|Vignesh Prajapati|M|13/11/1982|English
+103304|Sander  VanVugt|M|06/11/1984|English
+103305|AnthonyPuca|M|29/03/1991|English
+103306|Allan Liska|F|24/06/1974|English
+103307|Dan Nemeth|M|24/02/1989|English
+103308|Riaz Ahmed|M|22/10/1986|English
+103309|Alex Chow|M|03/08/1986|English
+103310|Alok Shrivastwa|M|06/11/1984|English
+103331|David Mc Cullough|M|12/10/1990|English	
+103332|Stephen Jay Gould|M|09/06/1989|English
+103333|Lewis Mumford|M|12/12/1986|English
+103334|James|M|24/08/1986|English
+103335|Lawrence Wright|M|14/07/1982|English
+

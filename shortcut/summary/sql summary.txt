@@ -1,0 +1,157 @@
+---------------------------------------
+DQL (data query language)
+---------------------------------------
+
+SELECT and (subquery)
+
+---------------------------------------
+DDL (data definition language)
+---------------------------------------
+
+ALTER
+	- SEQUENCE
+	- SESSION
+	- TABLE
+	- TRIGGER
+	- USER
+	- VIEW
+	- DATABASE
+	- FUNCTION
+	- INDEX
+CREATE
+	- PROCEDURE
+	- FUNCTION
+	- SEQUENCE
+	- SYNONYM
+	- TABLE
+	- TRIGGER
+	- USER
+	- VIEW
+DROP
+	- FUNCTION
+	- INDEX
+	- TABLE
+	- SYNONYM
+	- SEQUENCE
+	- PROCEDURE
+	- TRIGGER
+	- USER
+	- VIEW
+TRUNCATE
+	- TABLE
+
+
+---------------------------------------
+DML (data manipulation language)
+---------------------------------------
+
+DELETE
+INSERT
+UPDATE
+
+---------------------------------------
+TCL (transaction control language)
+---------------------------------------
+COMMIT
+SAVEPOINT
+ROLLBACK
+SET TRANSACTION
+
+---------------------------------------
+CLAUSES
+---------------------------------------
+
+CONSTRAINT (constraint clause)
+	- UNIQUE
+	- NOT NULL
+	- PRIMARY KEY
+	- REFERENCES (foriegn key)
+	- DEFAULT
+	- CHECK
+
+---------------------------------------
+JOINS
+---------------------------------------
+CARTESIAN JOIN or CROSS PRODUCT (no join condition)
+EQUIJOIN
+NON-EQUIJOIN
+LEFT OUTER JOIN
+RIGHT OUTER JOIN
+OUTER JOIN (all records not satisfying the join condition)
+NATURAL JOIN (datatype considered)
+USING (datatype not considered)
+
+---------------------------------------
+SET OPERATORS
+---------------------------------------
+
+UNION
+INTERSECT
+MINUS
+
+------------------------------------------
+FUNCTIONS
+------------------------------------------
+-- aggregate functions :
+SUM
+MAX
+MIN
+AVG
+
+-- string handling functions :
+SUBSTR
+LTRIM
+RTRIM
+CONCAT
+LPAD
+RPAD
+TRANSLATE
+REPLACE
+LENGTH
+
+-- functions on date datatype :
+TODATE
+TOCHAR
+EXTRACT
+	-- format masks --
+		- month
+		- mon
+		- mm
+		- day
+		- dd
+		- d
+		- year
+		- yyyy
+		- yy
+---------------------------------------
+OTHERS
+---------------------------------------
+
+WHERE(used in a select, alter, update statements)
+	- LIKE
+	- IN
+	- NOT IN
+	- COMPARISON OPERATORS
+	- JOIN CONDITIONS
+	- FOR SUBQUERIES
+		- ALL
+		- ANY
+		- IN 
+		- NOT IN
+		- EXISTS
+
+
+ORDER BY(used to order the records)
+	- ASC
+	- DESC
+
+GROUP BY(group the output records by a particular column)
+	- HAVING (similar to WHERE used in GROUP BY)
+
+RENAME (used to rename database object names)
+
+MODIFY (used in ALTER table)
+
+SET <command> <value>
+
+COLUMN <column-name> FORMAT <format-mask>

@@ -1,0 +1,10 @@
+CREATE TABLE BOOKMASTERS
+	(book_id 	 NUMBER(15) CONSTRAINT book_pk PRIMARY KEY,
+ 	 author_id 	 NUMBER(15) REFERENCES authormasters(author_id),
+	 book_name  	 VARCHAR2(55),
+ 	 isbn  	         NUMBER(15),
+	 pages		 NUMBER(10),
+	 cost 		 NUMBER(10),
+ 	 published_date  DATE,
+ 	 book_type       VARCHAR2(15)
+	);

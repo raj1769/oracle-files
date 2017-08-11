@@ -1,0 +1,61 @@
+CREATE OR REPLACE PACKAGE BODY BOOKS_LOADER_PKG IS
+	PROCEDURE LOAD_DATA(errbuff OUT varchar2, retcode OUT number) IS
+		TYPE t_books IS TABLE OF BOOKS_TEMP%ROWTYPE INDEX BY PLS_INTEGER;
+		v_books t_books;
+		v_m varchar2(10) := 'INVALID';
+		v_pub_date date;
+	BEGIN
+		SELECT * BULK COLLECT INTO v_books FROM books_temp;
+		FOR i IN v_books.FIRST .. v_books.LAST
+		LOOP
+		v_pub_date := v_books(i).published_date;
+		VALIDATE_DATA(v_m, p_author_id => v_books(i).author_id,
+				     p_isbn => v_books(i).isbn,
+				     p_pages => v_books(i).pages,
+				     p_cost => v_books(i).cost,
+				     v_pub_date => v_books(i).published_date,
+				     p_book_type => v_books(i).book_type);
+		IF v_m = 'VALID' THEN
+			INSERT INTO BOOKMASTERS VALUES (book_id_sequence.nextval, v_books(i).author_id,
+							v_books(i).book_name, v_books(i).isbn,
+							v_books(i).pages, v_books(i).cost,
+							v_pub_date, v_books(i).book_type);
+		END IF;
+		END LOOP; 
+	END LOAD_DATA;
+	PROCEDURE VALIDATE_DATA (v_m IN OUT varchar2,p_author_id BOOKS_TEMP.AUTHOR_ID%TYPE,
+						   p_isbn BOOKS_TEMP.ISBN%TYPE,
+						   p_pages BOOKS_TEMP.PAGES%TYPE,
+						   p_cost BOOKS_TEMP.COST%TYPE,
+						   v_pub_date IN OUT BOOKS_TEMP.PUBLISHED_DATE%TYPE,
+						   p_book_type BOOKS_TEMP.BOOK_TYPE%TYPE) IS
+	C_A NUMBER;
+	C_B NUMBER;
+	BEGIN
+		SELECT COUNT(*) INTO C_A FROM AUTHORMASTERS WHERE AUTHOR_ID = P_AUTHOR_ID;
+		SELECT COUNT(*) INTO C_B FROM BOOKMASTERS WHERE ISBN = P_ISBN;
+		IF C_A > 0 THEN
+			IF C_B = 0 THEN
+				IF p_pages >= 0 AND p_cost >= 0 THEN
+					IF v_pub_date > SYSDATE then
+						v_pub_date := SYSDATE;
+					END IF;
+					IF UPPER(p_book_type) = UPPER('Fiction') OR UPPER(p_book_type) = UPPER('Non-Fiction')
+						OR UPPER(p_book_type) = UPPER('Business') OR UPPER(p_book_type) = UPPER('Audio') THEN
+						FND_FILE.PUT_LINE(FND_FILE.OUTPUT,'The book type is : ' || p_book_type);
+						v_m := 'VALID';
+					ELSE
+						FND_FILE.PUT_LINE(FND_FILE.OUTPUT,'NOT A VALID BOOK TYPE');
+					END IF;
+				ELSE
+					FND_FILE.PUT_LINE(FND_FILE.OUTPUT,'INVALID PAGES OR COST');
+				END IF;
+			ELSE
+				FND_FILE.PUT_LINE(FND_FILE.OUTPUT,'ISBN ALREADY EXISTS IN THE TABLE');
+			END IF;
+		ELSE
+			FND_FILE.PUT_LINE(FND_FILE.OUTPUT,'INVALID AUTHOR ID. AUTHOR ID DOES NOT EXIST IN AUTHORMASTERS');
+		END IF;
+	END VALIDATE_DATA;
+END BOOKS_LOADER_PKG;
+/

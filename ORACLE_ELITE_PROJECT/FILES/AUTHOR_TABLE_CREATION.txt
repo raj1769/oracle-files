@@ -1,0 +1,6 @@
+CREATE TABLE AUTHORMASTERS
+	(author_id     NUMBER(15) CONSTRAINT AUTHOR_ID_PK PRIMARY KEY,
+ 	author_name    VARCHAR2(30),
+ 	gender         VARCHAR2(1),
+ 	birth_date     DATE,
+ 	mother_tongue  VARCHAR2(20));
